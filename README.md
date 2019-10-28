@@ -17,7 +17,6 @@ Example TvHeadend URL:
 pipe:///root/kodi.proxy/tvh.sh "plugin://plugin.video.kayo.sports/?_=play&id=53217&_l=.pvr"
 ```
 
-
 For anyone brave enough to try get Kayo working through TvHeadend,
 my Kodi proxy script should now work.
 
