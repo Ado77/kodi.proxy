@@ -17,13 +17,14 @@ Example TvHeadend URL:
 pipe:///root/kodi.proxy/tvh.sh "plugin://plugin.video.kayo.sports/?_=play&id=53217&_l=.pvr"
 ```
 
-For anyone brave enough to try get Kayo working through TvHeadend,
+# For anyone brave enough to try get Kayo working through TvHeadend,
 my Kodi proxy script should now work.
 
 https://github.com/matthuisman/kodi.proxy
 
 Here are some basic instructions
 
+```
 apt-get install wget python-virtualenv
 cd ~
 wget -O – https://github.com/matthuisman/kodi.proxy/tarball/master | tar xz
@@ -32,14 +33,19 @@ cd kodi.proxy
 virtualenv --no-site-packages --python=python2.7 .env
 source .env/bin/activate
 pip install -r requirements.txt
+```
 
 Then you can just run
 
+```
 ./proxy.py "install://plugin.video.kayo.sports"
+```
 
 Then run
 
+```
 ./proxy.py "plugin://plugin.video.kayo.sports/?_=login"
+```
 
 Once it logs in, just type -1 to exit (or CTRL-C)
 
@@ -51,7 +57,10 @@ Name it Kayo and enable it.
 Go to Muxes, Add Mux, Select Kayo network.
 
 Set the url to:
+
+```
 pipe:///root/kodi.proxy/tvh.sh "plugin://plugin.video.kayo.sports/?_=play&id=53217&_l=.pvr"
+```
 
 Replace /root/kodi.proxy/ with the path to your kodi.proxy directory.
 
